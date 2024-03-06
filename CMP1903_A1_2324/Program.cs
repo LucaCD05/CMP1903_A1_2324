@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 using System.Threading.Tasks;
+using CMP1903_A1_2324;
 /*
  * Create a Game object and call its methods.
  * Create a Testing object to verify the output and operation of the other classes.
@@ -20,11 +22,13 @@ namespace CMP1903_A1_2324
         }
     }
 }
-{
+
     class Program
 {
     static void Main(string[] args)
     {
+        Testing testing = new Testing();
+
         // output messages indicated the testing of the code as it runs
         Debug.WriteLine("Testing Die:");
         Testing.TestDie();
@@ -37,4 +41,4 @@ namespace CMP1903_A1_2324
         Console.ReadLine(); // To prevent console from closing immediately
     }
 }
-}
+
